@@ -282,9 +282,9 @@ public:
     return ch;
   }
 
-  int getch() { getch_echo(false); }
+  int getch() { return getch_echo(false); }
 
-  int getche() { getch_echo(true); }
+  int getche() { return getch_echo(true); }
 
   int wherexy(int &x, int &y) {
     printf("\033[6n");
