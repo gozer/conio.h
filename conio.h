@@ -301,6 +301,8 @@ public:
       lx = lx * 10 + in - '0';
     x = lx;
     y = ly;
+
+    return 0;
   }
 
   int wherex() {
@@ -341,15 +343,18 @@ public:
   }
 
   int cputs(const char *str) {
-    printf(str);
+    printf("%s", str);
     return 0;
   }
 
   char *getpass(const char *prompt) {
     // implementada en unistd.h
+    return NULL;
   }
 
-  int gettext(int l, int t, int r, int b, void *destination) {}
+  int gettext(int l, int t, int r, int b, void *destination) {
+    return 0;
+  }
 
 } ___CONIO_H;
 
